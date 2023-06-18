@@ -1,0 +1,207 @@
+@import 'nav.css';
+/* @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap'); */
+
+:root {
+      --darkb: #603912;
+      --coksu: #F9F6E5;
+      --ijo: #687270;
+      --coksu: #F9F6E5;
+      --darkb: #603912;
+      --pink: #e5345b;
+      --yellow: #FFFF00;
+}
+
+body {
+      background: var(--darkb);
+}
+
+.hero-section {
+      width: 100%;
+      height: calc(100vh - 60px);
+      position: relative;
+      display: flex;
+      background-image: url('../images/fix.jpg');
+      background-size: cover;
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+}
+
+.hero-section .content h1 {
+      font-size: 80px;
+      color: #603912;
+      padding: 10px 10vw;
+}
+
+.hero-section .content .sub-heading {
+      font-size: 22px;
+      padding: 10px 10vw;
+      color: #603912;
+}
+
+/* product */
+
+.product {
+      position: relative;
+      overflow: hidden;
+      padding: 28px 0;
+}
+
+.product-category {
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+      /* position: center; */
+      color: #F9F6E5;
+      width: 50%;
+      padding: 10px 10vw;
+}
+
+.product-thum {
+      width: 230px;
+      height: 320px;
+      border-radius: 18px;
+      object-fit: cover;
+}
+
+.product-container {
+      padding: 0px 10vw;
+      display: flex;
+      overflow-x: smooth;
+      scroll-behavior: smooth;
+}
+
+.product-container ::-webkit-scrollbar {
+      display: none;
+}
+
+.product-card {
+      flex: 0 0 auto;
+      width: 250px;
+      height: 450px;
+      margin-right: 40px;
+}
+
+
+.product-image {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+}
+
+.tag {
+      /* LOGO RENT BULET */
+      position: absolute;
+      background: #603912;
+      /* padding: 10px 1vw; */
+      padding: 7px;
+      border-radius: 50%;
+      color: #F9F6E5;
+      top: 10px;
+      right: 33px;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      /* text-transform: capitalize; */
+      font-size: 13px;
+}
+
+.card-btn {
+      position: absolute;
+      bottom: 31px;
+      left: 46%;
+      transform: translateX(-50%);
+      /* padding: 5px; */
+      padding: 10px;
+      width: 90%;
+      text-transform: capitalize;
+      border: 2px solid #F9F6E5;
+      outline: none;
+      background: #603912;
+      border-radius: 10px;
+      transition: 0.5s;
+      cursor: pointer;
+      color: #F9F6E5;
+      opacity: 0;
+}
+
+.product-card:hover .card-btn {
+      opacity: 1;
+}
+
+.card-btn:hover {
+      background: #2d3635;
+}
+
+.informasi-produk {
+      width: 100%;
+      height: 100px;
+      padding-top: 10px;
+}
+
+.product-brand {
+      text-transform: uppercase;
+      color: #F9F6E5;
+}
+
+.product-short-des {
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      overflow: hidden;
+      opacity: 0.5;
+      text-transform: capitalize;
+      margin: 5px 0;
+      color: #F9F6E5;
+}
+
+.price {
+      font-weight: 900;
+      font-size: 20px;
+      color: #F9F6E5;
+}
+
+.actual-price {
+      margin-left: 20px;
+      opacity: 0.5;
+      text-decoration: line-through;
+      color: #687270;
+}
+
+.pre-btn,
+.nxt-btn {
+      border: none;
+      width: 10vw;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0)0%, #603912 100%);
+      cursor: pointer;
+      z-index: 8;
+      padding: 10px 5vw;
+}
+
+.pre-btn {
+      left: 0;
+      transform: rotate(180deg);
+}
+
+.nxt-btn {
+      right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+      opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+      /* opacity: 1; */
+      background: #e5345b;
+}

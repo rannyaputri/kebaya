@@ -1,0 +1,147 @@
+.product-details {
+      width: 100%;
+      padding: 60px 10vw;
+      /* padding: 10px 5vw; */
+      display: flex;
+      justify-content: space-between;
+}
+
+.image-slider {
+      width: 330px;
+      height: 420px;
+      position: relative;
+      background-image: url('../images/kebaya1.jpg');
+      background-size: cover;
+      border-radius: 18px;
+
+}
+
+/* GAK DIPAKE BINGUNG */
+.product-images {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      background: #fff;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      height: 100px;
+      grid-gap: 10px;
+      padding: 10px;
+}
+
+.product-images img {
+      width: 60px;
+      height: 80px;
+      object-fit: cover;
+      cursor: pointer;
+}
+
+.product-images img.active {
+      opacity: 0.5;
+}
+
+.details {
+      width: 66%;
+}
+
+.details .product-brand {
+      text-transform: capitalize;
+      font-size: 30px;
+}
+
+.details .product-short-des {
+      font-size: 15px;
+      line-height: 20px;
+      height: auto;
+      margin: 15px 0 30px;
+}
+
+.product-price {
+      font-weight: 700;
+      font-size: 30px;
+      color: #ffffffde;
+}
+
+.product-actual-price {
+      font-size: 20px;
+      opacity: 0.5;
+      text-decoration: line-through;
+      margin: 0 20px;
+      font-weight: 300;
+}
+
+.product-discount {
+      color: #ff9898;
+      font-size: 20pz;
+}
+
+.product-sub-heading {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin: 60px 0 10px;
+      font-weight: 300;
+      color: #F9F6E5;
+}
+
+.size-radio-btn {
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      font-size: 25px;
+      border: 1px solid #F9F6E5;
+      border-radius: 50%;
+      margin: 10px;
+      margin-left: 0;
+      line-height: 80px;
+      text-transform: uppercase;
+      color: #F9F6E5;
+      cursor: pointer;
+}
+
+/* .size-radio-btn:hover {
+      background: #f58282;
+} */
+
+.size-radio-btn.check {
+      background: #ff9898;
+      color: #fff;
+}
+
+.btn {
+      width: 48%;
+      padding: 15px;
+      border-radius: 5px;
+      background: none;
+      border: 1px solid #F9F6E5;
+      color: #F9F6E5;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 2px 0;
+      text-transform: capitalize;
+}
+
+.cart-btn {
+      margin-right: 2%;
+      background: #ff9898;
+      color: #F9F6E5;
+}
+
+.detail-des {
+      padding: 0 10vw;
+      text-transform: capitalize;
+      color: #F9F6E5;
+}
+
+.heading {
+      font-size: 30px;
+      margin-bottom: 30px;
+}
+
+.des {
+      color: #F9F6E5;
+      line-height: 25px;
+}
