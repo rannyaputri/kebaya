@@ -16,7 +16,6 @@
 
 }
 
-/* GAK DIPAKE BINGUNG */
 .product-images {
       position: absolute;
       bottom: 10px;
@@ -79,49 +78,47 @@
 }
 
 .product-sub-heading {
-      font-size: 30px;
+      font-size: 25px;
       text-transform: uppercase;
-      margin: 60px 0 10px;
+      margin: 10px 0 5px;
       font-weight: 300;
       color: #F9F6E5;
 }
 
 .size-radio-btn {
       display: inline-block;
-      width: 70px;
-      height: 70px;
+      width: 60px;
+      height: 60px;
       text-align: center;
-      font-size: 25px;
-      border: 1px solid #F9F6E5;
+      font-size: 20px;
+      border: 2px solid #F9F6E5;
       border-radius: 50%;
       margin: 10px;
       margin-left: 0;
-      line-height: 80px;
+      line-height: 60px;
       text-transform: uppercase;
       color: #F9F6E5;
       cursor: pointer;
 }
 
-/* .size-radio-btn:hover {
-      background: #f58282;
-} */
 
 .size-radio-btn.check {
       background: #ff9898;
       color: #fff;
 }
 
-.btn {
+.btn1 {
       width: 48%;
       padding: 15px;
-      border-radius: 5px;
+      border-radius: 18px;
       background: none;
       border: 1px solid #F9F6E5;
       color: #F9F6E5;
       font-size: 20px;
       cursor: pointer;
-      margin: 2px 0;
+      margin: 10px 0;
       text-transform: capitalize;
+      position: absolute;
 }
 
 .cart-btn {
@@ -144,4 +141,74 @@
 .des {
       color: #F9F6E5;
       line-height: 25px;
+}
+
+/* QUANTITY */
+.wrapper {
+      height: 50px;
+      min-width: 100px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #F9F6E5;
+      border-radius: 12px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      margin-left: 0;
+      margin: 20px 0;
+      line-height: 60px;
+      cursor: pointer;
+}
+
+
+.wrapper span {
+      /* width: 0%; */
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      color: #603912;
+}
+
+/* END QUANTITY */
+
+/* CALENDER */
+.form-container form {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      position: absolute;
+      bottom: 4rem;
+      background: #F9F6E5;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 50px 0;
+}
+
+.form-container span {
+      color: #603912;
+      font-weight: 600;
+      text-align: center;
+}
+
+.form-container input {
+      color: #603912;
+      font-weight: 600;
+}
+
+.input-box {
+
+      flex: 1 1 7rem;
+      display: flex;
+      flex-direction: column;
+}
+
+.qtycal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
 }

@@ -144,6 +144,6 @@ app.get('/add-product', (req, res) => {
       res.sendFile(path.join(staticPath, "addProduct.html"));
 })
 
-app.listen(8000, () => {
-      console.log('Listening on port 8000.......');
+app.listen(8001, () => {
+      console.log('Listening on port 8001.......');
 })
